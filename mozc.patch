@@ -1,0 +1,35 @@
+diff --git a/src/BUILD.ibus.bazel b/src/BUILD.ibus.bazel
+index 3ff09d61..85ab6406 100644
+--- a/src/BUILD.ibus.bazel
++++ b/src/BUILD.ibus.bazel
+@@ -17,7 +17,7 @@ cc_library(
+         "include/libmount/**",
+         "include/blkid/**",
+         "include/glib-2.0/**",
+-        "lib/x86_64-linux-gnu/glib-2.0/include/**",
++        "lib64/glib-2.0/include/**",
+     ]),
+     copts = ["-pthread"],
+     includes = [
+@@ -25,7 +25,7 @@ cc_library(
+         "include/libmount",
+         "include/blkid",
+         "include/glib-2.0",
+-        "lib/x86_64-linux-gnu/glib-2.0/include",
++        "lib64/glib-2.0/include",
+     ],
+     linkopts = [
+         "-libus-1.0",
+diff --git a/src/config.bzl b/src/config.bzl
+index cdf15a6b..7b5b731e 100644
+--- a/src/config.bzl
++++ b/src/config.bzl
+@@ -37,7 +37,7 @@ MACOS_BUNDLE_ID_PREFIX = "org.mozc.inputmethod.Japanese"
+ MACOS_MIN_OS_VER = "10.12"
+ 
+ ## Qt paths
+-QT_BASE_PATH = "/usr/include/x86_64-linux-gnu/qt5"  # For Debian
++QT_BASE_PATH = "/usr/include/qt5"  # For Amazon Linux 2
+ QT_BIN_PATH = "/usr/bin/"
+ 
+ ## For macOS

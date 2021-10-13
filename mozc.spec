@@ -6,7 +6,6 @@ Group: Applications/Editors
 License: BSD-3-Clause
 URL: https://github.com/ciffelia/mozc-al
 BuildArch: x86_64
-Requires: glibc, libstdc++, qt5-qtbase
 
 %description
 A set of prebuilt Mozc binaries for Amazon Linux 2.

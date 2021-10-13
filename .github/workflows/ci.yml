@@ -13,3 +13,17 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           tags: mozc-builder:latest
+          load: true
+
+      - name: Copy RPM package
+        run: |
+          id = $(docker create mozc-builder)
+          docker cp $id:/home/rpm_builder/rpmbuild/RPMS ./RPMS
+          docker rm $id
+
+      - name: Upload RPM package
+        uses: actions/upload-artifact@v2
+        with:
+          name: rpm-package
+          path: ./RPMS/**/*.rpm
+          if-no-files-found: error

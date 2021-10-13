@@ -17,14 +17,14 @@ Not available (yet)
    git clone --recursive https://github.com/ciffelia/mozc-al.git
    ```
 
-2. `cd` to the cloned repository and run build command.
+1. `cd` to the cloned repository and run build command.
 
    ```sh
    cd mozc-al
    docker build -t mozc-builder .
    ```
 
-3. Extract RPM package from the build image.
+1. Extract RPM package from the build image.
 
    ```sh
    id=$(docker create mozc-builder)

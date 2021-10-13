@@ -36,6 +36,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: rpm-package
+          path: ./rpm-package
 
       - name: Run test
         run: docker run --rm -v $PWD/rpm-package:/rpm-package:ro amazonlinux:2 bash -c "yum install -y /rpm-package/*.rpm"

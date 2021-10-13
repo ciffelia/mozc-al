@@ -40,3 +40,20 @@ jobs:
 
       - name: Run test
         run: docker run --rm -v $PWD/rpm-package:/rpm-package:ro amazonlinux:2 bash -c "yum install -y /rpm-package/*.rpm"
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/')
+    needs: [build, test]
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Download RPM package
+        uses: actions/download-artifact@v2
+        with:
+          name: rpm-package
+          path: ./rpm-package
+
+      - name: Create release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ./rpm-package/*.rpm
+          fail_on_unmatched_files: true

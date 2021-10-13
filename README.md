@@ -5,9 +5,17 @@
 
 A set of prebuilt Mozc binaries for Amazon Linux 2.
 
-## Install (Amazon WorkSpaces)
+## Install
 
-Not available (yet)
+1. Download the prebuilt package from [the Release page](https://github.com/ciffelia/mozc-al/releases/latest).
+
+1. Install the package.
+
+   ```sh
+   sudo yum install -y mozc-X.X.X-X.amzn2.x86_64.rpm
+   ```
+
+1. Run `ibus-setup` and add "Japanese - Mozc" in the Input Method tab.
 
 ## Build
 

@@ -1,6 +1,6 @@
 Name: mozc
 Summary: A Japanese Input Method Editor (IME) designed for multi-platform
-Version: 0.3.0
+Version: 1.0.0
 Release: 0%{?dist}
 Group: Applications/Editors
 License: BSD-3-Clause

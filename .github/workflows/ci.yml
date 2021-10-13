@@ -27,3 +27,15 @@ jobs:
           name: rpm-package
           path: ./RPMS/**/*.rpm
           if-no-files-found: error
+
+  test:
+    needs: build
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Download RPM package
+        uses: actions/download-artifact@v2
+        with:
+          name: rpm-package
+
+      - name: Run test
+        run: docker run --rm -v $PWD/rpm-package:/rpm-package:ro amazonlinux:2 bash -c "yum install -y /rpm-package/*.rpm"

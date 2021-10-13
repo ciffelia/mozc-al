@@ -75,7 +75,7 @@ WORKDIR /home/rpm_builder/rpmbuild
 # Copy RPM spec
 COPY --chown=rpm_builder:rpm_builder ./mozc.spec ./SPECS/
 
-# Copy iBus config
+# Copy IBus config
 COPY --chown=rpm_builder:rpm_builder ./mozc.xml ./SOURCES/
 
 # Copy Mozc binaries

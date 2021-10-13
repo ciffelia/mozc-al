@@ -1,5 +1,5 @@
 Name: mozc
-Summary: Mozc for Amazon Linux 2
+Summary: A Japanese Input Method Editor (IME) designed for multi-platform
 Version: 0.3.0
 Release: 0%{?dist}
 Group: Applications/Editors
@@ -8,7 +8,8 @@ URL: https://github.com/ciffelia/mozc-al
 BuildArch: x86_64
 
 %description
-A set of prebuilt Mozc binaries for Amazon Linux 2.
+Mozc is a Japanese Input Method Editor (IME) designed for multi-platform including GNU/Linux.
+This package provides Mozc for Amazon Linux desktop environment.
 
 %install
 install -D --preserve-timestamps %{_sourcedir}/mozc_server                %{buildroot}/usr/lib/mozc/mozc_server

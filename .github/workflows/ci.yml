@@ -25,7 +25,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: rpm-package
-          path: ./RPMS/**/*.rpm
+          path: ./RPMS/x86_64/*.rpm
           if-no-files-found: error
 
   test:

@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-version=`cat version`
-exec docker run -it --rm albuild-mozc:$version /bin/bash -l

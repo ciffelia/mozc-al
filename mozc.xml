@@ -1,23 +1,24 @@
 <component>
-  <version>0.0.0.0</version>
   <name>com.google.IBus.Mozc</name>
-  <license>New BSD</license>
-  <exec>/opt/albuild-mozc/{{VERSION}}/ibus_mozc --ibus</exec>
-  <textdomain>ibus-mozc</textdomain>
+  <version>0.0.0.0</version>
+  <description>Mozc Component</description>
   <author>Google Inc.</author>
   <homepage>https://github.com/google/mozc</homepage>
-  <description>Mozc Component</description>
-<engines>
-<engine>
-  <symbol>&#x3042;</symbol>
-  <rank>80</rank>
-  <description>Mozc (Japanese Input Method)</description>
-  <language>ja</language>
-  <icon>/opt/albuild-mozc/{{VERSION}}/ime_product_icon_opensource-32.png</icon>
-  <setup>/opt/albuild-mozc/{{VERSION}}/mozc_tool --mode=config_dialog</setup>
-  <layout>jp</layout>
-  <name>mozc-jp</name>
-  <longname>Mozc</longname>
-</engine>
-</engines>
+  <license>New BSD</license>
+  <exec>/usr/lib/ibus-mozc/ibus-engine-mozc --ibus</exec>
+  <textdomain>ibus-mozc</textdomain>
+  <engines>
+    <engine>
+      <name>mozc-jp</name>
+      <longname>Mozc</longname>
+      <description>Mozc (Japanese Input Method)</description>
+      <language>ja</language>
+      <rank>80</rank>
+      <icon>/usr/share/ibus-mozc/product_icon.png</icon>
+      <icon_prop_key>InputMode</icon_prop_key>
+      <symbol>&#x3042;</symbol>
+      <setup>/usr/lib/mozc/mozc_tool --mode=config_dialog</setup>
+      <layout>default</layout>
+    </engine>
+  </engines>
 </component>

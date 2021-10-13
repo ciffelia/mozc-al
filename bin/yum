@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-version=`cat version`
-exec yum install rpm/albuild-ibus-mozc-$version-0.amzn2.x86_64.rpm

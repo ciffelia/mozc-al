@@ -17,7 +17,7 @@ jobs:
 
       - name: Copy RPM package
         run: |
-          id = $(docker create mozc-builder)
+          id=$(docker create mozc-builder)
           docker cp $id:/home/rpm_builder/rpmbuild/RPMS ./RPMS
           docker rm $id
 

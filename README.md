@@ -27,7 +27,7 @@ Not available (yet)
 3. Extract RPM package from the build image.
 
    ```sh
-   id = $(docker create mozc-builder)
+   id=$(docker create mozc-builder)
    docker cp $id:/home/rpm_builder/rpmbuild/RPMS ./RPMS
    docker rm $id
    ```

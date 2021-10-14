@@ -7,7 +7,7 @@ A set of prebuilt Mozc binaries for Amazon Linux 2.
 
 ## Install
 
-1. Download the prebuilt package from [the Release page](https://github.com/ciffelia/mozc-al/releases/latest).
+1. Download the prebuilt package from [the latest release page](https://github.com/ciffelia/mozc-al/releases/latest).
 
 1. Install the package.
 

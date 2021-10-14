@@ -67,8 +67,8 @@ RUN yum install -y \
 # Switch to non-root user
 RUN adduser --create-home rpm_builder
 USER rpm_builder
-WORKDIR /home/rpm_builder/rpmbuild
 
+# Create build directory
 RUN mkdir -p ~/rpmbuild/{SOURCES,SPECS}
 WORKDIR /home/rpm_builder/rpmbuild
 

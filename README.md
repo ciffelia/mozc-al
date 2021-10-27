@@ -12,7 +12,7 @@ A set of prebuilt Mozc binaries for Amazon Linux 2.
 1. Install the package.
 
    ```sh
-   sudo yum install -y mozc-X.X.X-X.amzn2.x86_64.rpm
+   sudo yum install -y mozc-git-X.X.X-X.amzn2.x86_64.rpm
    ```
 
 1. Run `ibus-setup` and add "Japanese - Mozc" in the Input Method tab.

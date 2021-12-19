@@ -1,6 +1,6 @@
 Name: mozc-git
 Summary: A Japanese Input Method Editor (IME) designed for multi-platform
-Version: 2.0.0
+Version: 2.0.1
 Release: 0%{?dist}
 Group: Applications/Editors
 License: BSD-3-Clause

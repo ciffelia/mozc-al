@@ -4,7 +4,7 @@ Version: 2.0.1
 Release: 0%{?dist}
 Group: Applications/Editors
 License: BSD-3-Clause
-URL: https://github.com/ciffelia/mozc-al
+URL: https://github.com/ciffelia/mozc-amzn2
 BuildArch: x86_64
 
 %description
